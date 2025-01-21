@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# rsync -av --exclude='__pycache__' ../firebrick_composer/plugins/ composer/"${1}"/plugins
+rsync -av --exclude='__pycache__' ../firebrick_composer/plugins/ composer/"${1}"/plugins
 
 source_path="../firebrick_composer/dags"
 target_path="composer/${1}/dags"
